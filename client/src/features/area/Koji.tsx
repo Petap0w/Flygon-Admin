@@ -147,7 +147,33 @@ export const KojiMenuButton = ({
           field="pokemon_mode"
           onClick={handleClose}
         >
-          Route 70m Pokemon
+          Route 70m Pokemon (3)
+        </SendKojiRequest>
+        <SendKojiRequest
+          endpoint="route/spawnpoint"
+          options={{
+            radius: 70,
+            min_points: 5,
+            cluster_mode: 'Balanced',
+            fast: false,
+          }}
+          field="pokemon_mode"
+          onClick={handleClose}
+        >
+          Route 70m Pokemon (5)
+        </SendKojiRequest>
+        <SendKojiRequest
+          endpoint="route/spawnpoint"
+          options={{
+            radius: 70,
+            min_points: 8,
+            cluster_mode: 'Balanced',
+            fast: false,
+          }}
+          field="pokemon_mode"
+          onClick={handleClose}
+        >
+          Route 70m Pokemon (8)
         </SendKojiRequest>
         {/* <SendKojiRequest
           endpoint="route/pokestop"
